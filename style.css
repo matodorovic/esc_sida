@@ -4,8 +4,6 @@ body {
 
 .header {
     background-color:black;
-    box-sizing: border-box;
-    margin: 0 auto;
     padding: 10px;
     text-align: left;
     color: white;
@@ -14,16 +12,22 @@ body {
 .navbar {
     list-style-type: none;
     border: solid red;
-    box-sizing: border-box;
-    margin: 0 auto;
+    margin: 10px;
     padding: 10px;
     text-align: center;
     
 }
 
 .navi {
-    margin: 100px 100px;
+    margin-right: 10%;
     display: inline;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    background-image:none;
+    margin: 10px;
 }
 
 .btn {
@@ -33,7 +37,6 @@ body {
     text-align: center;
     margin: 0 auto 0 10px;
     padding: 10px;
-    
 }
 
 .card {
@@ -42,7 +45,6 @@ body {
     width: 200px;
     margin: 10px;
     padding: 10px;
-    
     text-align: center;
     background-color: aqua;
     display:inline-flex;
@@ -53,13 +55,22 @@ body {
     margin: 0 auto;
     padding: 10px;
     text-align: center;
-    
 }
 
 .cardlink {
     display: inline-block;
     margin: 100px;
-    
+}
+
+.comments {
+    text-align: center;
+}
+
+.comment {
+    display:inline-block;
+    text-align: right;
+    border: solid black;
+    padding: 10px;
 }
 
 .part {
