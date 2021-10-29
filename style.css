@@ -16,6 +16,7 @@ body {
     margin: 10px;
     padding: 10px;
     text-align: center;
+    font-weight: bold;
     
 }
 
@@ -31,36 +32,111 @@ body {
     margin: 10px;
 }
 
-.btn {
+.btn1 {
     display: inline-block;
-    background-color: mediumslateblue;
+    background-color: red;
     box-sizing: border-box;
+    height: 40px;
+    width: 200px;
     text-align: center;
     margin: 0 0 0 10px;
     padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
 }
 
-.card {
+.btn2 {
+    display: inline-block;
+    background-color: lightskyblue;
     box-sizing: border-box;
-    height:250px;
+    height: 40px;
     width: 200px;
-    margin: 10px;
-    padding: 10px;
     text-align: center;
-    background-color: aqua;
-    display:inline-flex;
+    margin: 0 0 0 10px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border-radius: 3px;
 }
 
-.cardtitle {
+.cardbox {
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+
+.cardboxtitle {
     box-sizing: border-box;
     margin: 0 auto;
     padding: 10px;
     text-align: center;
 }
 
-.cardlink {
+.card {
+    box-sizing: border-box;
+    height:300px;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+    display:inline-block;
+    box-shadow: 0 0 5px lightgray;
+}
+
+.cardtitle {
+    display: block;
+}
+
+.cardtext {
+    display: block;
+}
+
+.card-inside-link {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 200px;
+    margin: 70px 50px 30px 30px;
+}
+
+.cardboxlink {
     display: inline-block;
     margin: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid mediumslateblue;
+    height: 40px;
+    width: 200px;
+    margin: 0 0 0 10px;
+    padding: 10px;
+}
+
+.story {
+    height: 300px;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.storylink {
+    display: inline-block;
+    margin-top: 20px;
+    border: solid lightskyblue;
+    box-sizing: border-box;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    
 }
 
 .comments {
@@ -74,21 +150,15 @@ body {
     padding: 10px;
 }
 
-.part {
-    margin: 10px;
-    text-align: center;
-}
-
 .footer {
     background-color: gray;
-    height: fit-content;
-    text-align: center;  
+    padding-left: 50px;
 }
 
 .footerinfo {
     display: inline-block;
-    margin: 50px 100px 50px 100px;
+    margin: 50px 50px 50px 50px;
     height: 100px;
-    width: fit-content;
+    width: 250px;
     text-align:left;
 }
