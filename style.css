@@ -1,10 +1,11 @@
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .header {
-    background-color:black;
+    background-color:#011827;
     padding: 10px;
     text-align: left;
     color: white;
@@ -12,12 +13,12 @@ body {
 
 .navbar {
     list-style-type: none;
-    border: solid red;
-    margin: 10px;
-    padding: 10px;
+    background-color: #011827;
+    color: white;
+    padding: 20px;
     text-align: center;
     font-weight: bold;
-    
+    margin: 0;
 }
 
 .navi {
@@ -34,7 +35,7 @@ body {
 
 .btn1 {
     display: inline-block;
-    background-color: red;
+    background-color: #E3170A;
     box-sizing: border-box;
     height: 40px;
     width: 200px;
@@ -48,7 +49,7 @@ body {
 
 .btn2 {
     display: inline-block;
-    background-color: lightskyblue;
+    background-color: #8ACFE5;
     box-sizing: border-box;
     height: 40px;
     width: 200px;
@@ -80,7 +81,7 @@ body {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background-color: aqua;
+    background-color: white;
     display:inline-block;
     box-shadow: 0 0 5px lightgray;
 }
@@ -94,7 +95,7 @@ body {
 }
 
 .card-inside-link {
-    background-color: red;
+    background-color: #E3170A;
     color: white;
     font-weight: bold;
     display: block;
@@ -102,25 +103,44 @@ body {
     padding: 10px;
     box-sizing: border-box;
     height: 40px;
-    width: 200px;
-    margin: 70px 50px 30px 30px;
+    width: 150px;
+    margin: 70px 50px 30px 80px;
+    border-radius: 3px;
 }
 
-.cardboxlink {
-    display: inline-block;
+.cardboxlink1 {
     margin: 100px;
-    text-align: center;
+    display: inline-block;
+    background-color: #E3170A;
     box-sizing: border-box;
-    border: solid mediumslateblue;
     height: 40px;
     width: 200px;
-    margin: 0 0 0 10px;
+    text-align: center;
+    margin: 10px 0 0 10px;
     padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.cardboxlink2 {
+    margin: 100px;
+    display: inline-block;
+    background-color: #8ACFE5;
+    box-sizing: border-box;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border-radius: 3px;
 }
 
 .story {
     height: 300px;
-    background-color: darkblue;
+    background-color: #011827;
     color: white;
     text-align: center;
     padding-top: 100px;
@@ -129,7 +149,7 @@ body {
 .storylink {
     display: inline-block;
     margin-top: 20px;
-    border: solid lightskyblue;
+    border: solid #8ACFE5;
     box-sizing: border-box;
     height: 40px;
     width: 200px;
@@ -151,8 +171,9 @@ body {
 }
 
 .footer {
-    background-color: gray;
+    background-color: #011827;
     padding-left: 50px;
+    color: white;
 }
 
 .footerinfo {
