@@ -93,18 +93,20 @@ body {
 .comments {
     text-align: center;
     display: inline-block;
+    box-sizing: border-box;
     width: 100%;
 }
 
 .comment1 {
     display:inline-block;
     text-align: right;
-    padding: 10px;
     clear: both;
+    margin-left: 10px;
 }
 
 .comment1 p {
     font-style: italic;
+    width: 400px;
 }
 
 .comment1 em {
@@ -119,17 +121,29 @@ body {
     .comment2 {
         display: none;
     }
+
+    .comment2 p {
+        display: none;
+    }
+    
+    .comment2 em {
+        display: none;
+    }
+    
+    .comment2 img {
+        display: none;
+    }
 }
 
 .comment2 {
     display:inline-block;
     text-align: right;
-    padding: 10px;
     clear: both;
 }
 
 .comment2 p {
     font-style: italic;
+    width: 400px;
 }
 
 .comment2 em {
@@ -145,12 +159,6 @@ body {
     margin: 10px;
     text-align: center;
     display: block;
-}
-
-@media screen and (max-width: 800px) {
-    .card {
-        
-    }
 }
 
 .cardboxtitle {
@@ -182,11 +190,15 @@ body {
     margin-top: 10px;
     margin-left: 10px;
     text-align: left;
+    padding-left: 10px;
 }
 
 .cardtext {
+    clear: both;
     display: block;
     font-size: 0.8em;
+    padding: 10px;
+    text-align: left;
 }
 
 .card-inside-link {
@@ -199,7 +211,9 @@ body {
     box-sizing: border-box;
     height: 40px;
     width: 150px;
-    margin: 70px 50px 30px 80px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
     border-radius: 4px;
 }
 
@@ -261,13 +275,12 @@ body {
 
 .img1text img {
     float:left;
-    width:640px;
-    height:460px;
+    width:50%;
+    height:100%;
     margin-right: 10px;
 }
 
 .img1text {
-    
     float: left;
 }
 
@@ -286,15 +299,14 @@ body {
 }
 
 .img2text img{
-    width:640px;
-    height:460px;
+    width:50%;
+    height:100%;
     float: right;
     margin-left: 10px;
 }
 
 .img2text {
     float: right;
-    
 }
 
 .img2link {
@@ -311,6 +323,20 @@ body {
     border-radius: 4px;
 }
 
+@media screen and (max-width: 800px) {
+    .text-with-img {
+        display: inline-block;
+    }
+
+    .img1text {
+        display: inline-block;
+    }
+
+    .img2text {
+        display: inline-block;
+    }
+}
+
 .footer {
     clear: both;
     background-color: #011827;
@@ -324,8 +350,7 @@ body {
 @media screen and (max-width: 800px) {
     .footer {
         display: block;
-        text-align: left;
-        
+        text-align: center;
     }
 }
 
