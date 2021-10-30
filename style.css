@@ -99,7 +99,7 @@ body {
 
 .comment1 {
     display:inline-block;
-    text-align: right;
+    text-align: left;
     clear: both;
     margin-left: 10px;
 }
@@ -107,6 +107,7 @@ body {
 .comment1 p {
     font-style: italic;
     width: 400px;
+    
 }
 
 .comment1 em {
@@ -115,6 +116,7 @@ body {
 
 .comment1 img {
     float: left;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -133,11 +135,16 @@ body {
     .comment2 img {
         display: none;
     }
+
+    .comment1 {
+        margin-right: 0;
+        font-size: 0.8em; 
+    }
 }
 
 .comment2 {
     display:inline-block;
-    text-align: right;
+    text-align: left;
     clear: both;
 }
 
@@ -152,10 +159,10 @@ body {
 
 .comment2 img {
     float: left;
+    margin-right: 10px;
 }
 
 .cardbox {
-    
     margin: 10px;
     text-align: center;
     display: block;
@@ -193,12 +200,28 @@ body {
     padding-left: 10px;
 }
 
+.users {
+    font-size: 0.7em; 
+    text-align: right; 
+    margin-right: 10px
+}
+
 .cardtext {
     clear: both;
     display: block;
     font-size: 0.8em;
     padding: 10px;
     text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .card-inside-link {
+        margin-top: 8px;
+    }
+
+    .cardbox {
+        margin-left: 5px;
+    }
 }
 
 .card-inside-link {
@@ -212,7 +235,7 @@ body {
     height: 40px;
     width: 150px;
     float: right;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-right: 20px;
     border-radius: 4px;
 }
@@ -328,7 +351,16 @@ body {
         display: inline-block;
     }
 
+    .img1text img {
+        display: inline-block;
+    }
+
     .img1text {
+        display: inline-block;
+    }
+
+    .img2text img {
+        margin-top: 10px;
         display: inline-block;
     }
 
@@ -340,11 +372,12 @@ body {
 .footer {
     clear: both;
     background-color: #011827;
-    padding: 50px;
+    
     color: white;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -358,6 +391,8 @@ body {
     display:inline-block;
     height: 200px;
     width: 150px;
+    padding-left: 50px;
+    padding-top: 50px;
     flex-basis: 0;
     flex-shrink: 1;
     flex-grow: 1;
