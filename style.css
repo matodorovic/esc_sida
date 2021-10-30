@@ -1,9 +1,11 @@
+html {
+    font-size: 18px;
+}
+
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
     margin: 0;
-    
 }
 
 .header {
@@ -48,8 +50,6 @@ body {
     flex-basis: 0;
     flex-shrink: 1;
     flex-grow: 1;
-    /*display:inline;
-    text-align: center; */
 }
 
 .hero {
@@ -60,8 +60,6 @@ body {
 .heroimg {
     height: 100%;
     width: 100%;
-    float: left;
-    
 }
 
 .btn1 {
@@ -92,7 +90,58 @@ body {
     border-radius: 4px;
 }
 
+.comments {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.comment1 {
+    display:inline-block;
+    text-align: right;
+    padding: 10px;
+    clear: both;
+}
+
+.comment1 p {
+    font-style: italic;
+}
+
+.comment1 em {
+    font-size: 0.8em;
+}
+
+.comment1 img {
+    float: left;
+}
+
+@media screen and (max-width: 800px) {
+    .comment2 {
+        display: none;
+    }
+}
+
+.comment2 {
+    display:inline-block;
+    text-align: right;
+    padding: 10px;
+    clear: both;
+}
+
+.comment2 p {
+    font-style: italic;
+}
+
+.comment2 em {
+    font-size: 0.8em;
+}
+
+.comment2 img {
+    float: left;
+}
+
 .cardbox {
+    
     margin: 10px;
     text-align: center;
     display: block;
@@ -137,6 +186,7 @@ body {
 
 .cardtext {
     display: block;
+    font-size: 0.8em;
 }
 
 .card-inside-link {
@@ -205,33 +255,20 @@ body {
     border-radius: 4px;;
 }
 
-.comments {
-    text-align: center;
-}
-
-.comment {
-    display:inline-block;
-    text-align: right;
-    border: solid black;
-    padding: 10px;
-}
-
 .text-with-img {
     display: block;
 }
 
 .img1text img {
-    
-    width:40%;
-    height:20%;
+    float:left;
+    width:640px;
+    height:460px;
+    margin-right: 10px;
 }
 
 .img1text {
-    display: flex;
-    flex-basis: 0;
-    flex-shrink: 1;
-    flex-grow: 1;
     
+    float: left;
 }
 
 .img1link {
@@ -249,13 +286,14 @@ body {
 }
 
 .img2text img{
-    width: 40%;
-    height: 20%;
-    margin: 10px;
+    width:640px;
+    height:460px;
+    float: right;
+    margin-left: 10px;
 }
 
 .img2text {
-    display:inline;
+    float: right;
     
 }
 
@@ -274,6 +312,7 @@ body {
 }
 
 .footer {
+    clear: both;
     background-color: #011827;
     padding: 50px;
     color: white;
