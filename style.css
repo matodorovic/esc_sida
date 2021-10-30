@@ -335,7 +335,7 @@ body {
 
 .img1text h3 {
     font-size: 32px;
-    adding: 50px 50px 0 50px;
+    padding: 50px 50px 0 50px;
     margin-bottom: 10px;
 }
 
@@ -388,24 +388,45 @@ body {
 
 @media screen and (max-width: 800px) {
     .text-with-img {
-        display: inline-block;
+        display: block;
+        clear: both;
     }
 
     .img1text img {
-        display: inline-block;
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0; 
+        margin-right: 0;
     }
 
     .img1text {
-        display: inline-block;
+        display: block;
+        padding: 0;
+    }
+
+    .img1link {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
 
     .img2text img {
         margin-top: 10px;
-        display: inline-block;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;   
     }
 
     .img2text {
-        display: inline-block;
+        display: block;
+        padding: 0;
+    }
+
+    .img2link {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -424,6 +445,8 @@ body {
     .footer {
         display: block;
         text-align: center;
+        padding-top: 10px;
+        margin-top: 10px;
     }
 }
 
