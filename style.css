@@ -236,15 +236,15 @@ body {
     }
 
     .cards {
-        display: flex;
+        display: flex; 
         justify-content: left;
+        overflow-x: scroll;
     }
 
-    .card {
-        flex-basis: 0;
-        flex-grow: 1;
-        flex-shrink: 1;
-    }
+   .card {
+        flex: none;
+        width: 100%;
+    } 
 }
 
 .card-inside-link {
@@ -451,7 +451,7 @@ body {
 }
 
 .footerinfo {
-    display:inline-block;
+    display: inline-block;
     height: 200px;
     width: 150px;
     padding-left: 50px;
