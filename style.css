@@ -248,7 +248,7 @@ body {
     } 
 
     .card-inside-link {
-
+        width: fit-content;
     }
 }
 
