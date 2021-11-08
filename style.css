@@ -53,8 +53,8 @@ body {
     flex-grow: 1;
 }
 
-#contact {
-    color:#8ACFE5;
+.navi:hover {
+    color: #8ACFE5;
 }
 
 .hero {
