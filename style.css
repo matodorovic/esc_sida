@@ -21,7 +21,6 @@ body {
 .header h1 {
     margin-top: 0;
     padding-top: 40px;
-    font-size: 1.4rem;
 }
 
 .header img {
@@ -33,18 +32,24 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .header {
+        height: fit-content;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
     .menu {
         display: block;
-        font-size: 1.6em;
+        font-size: 1.6rem;
         color: White;
         border-top: solid white;
         border-bottom: solid white;
         font-weight: bold;
         text-align: center;
-        box-sizing: border-box;
-        height: 30px;
         box-sizing: content-box;
         height: 12px;
+        margin: 0 auto;
     }
 }
 
@@ -117,6 +122,14 @@ body {
     font-weight: bold;
     font-size: 24px;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 660px) {
+    .btn2 {
+        background-color: white;
+        color: blue;
+        text-decoration: underline;
+    }
 }
 
 .comments {
