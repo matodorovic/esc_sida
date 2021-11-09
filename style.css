@@ -100,6 +100,7 @@ body {
 .heroimg {
     height: 100%;
     width: 100%;
+    margin-bottom: 0;
 }
 
 .btn1 {
@@ -113,7 +114,7 @@ body {
     padding: 20px;
     color: white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.3rem;
     border-radius: 4px;
 }
 
@@ -128,27 +129,45 @@ body {
     padding: 20px;
     color: black;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.3rem;
     border-radius: 4px;
 }
 
+@media screen and (min-width: 660px) {
+    .btn1 {
+        margin-top: -40px;
+    }   
+
+    .btn2 {
+        margin-top: -40px;
+    }
+} 
+
 @media screen and (max-width: 660px) {
+    .btn1 {
+        font-size: 1.2rem; 
+    }
+
     .btn2 {
         background-color: white;
         color: blue;
         text-decoration: underline;
+        font-size: 1.2rem;
     }
 }
 
 .comments {
     text-align: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     box-sizing: border-box;
     width: 100%;
+    margin-top: 2rem;
 }
 
 .comment1 {
-    display:inline-block;
+    display: block;
     text-align: left;
     clear: both;
     margin-left: 10px;
@@ -159,16 +178,36 @@ body {
     width: 400px;
 }
 
-.comment1 em {
+.comment1 cite {
+    font-style: italic;
     font-size: 0.8em;
+    padding-left: 6rem;
 }
 
 .comment1 img {
     float: left;
     margin-right: 10px;
+    height: 70%;
 }
 
 @media screen and (max-width: 800px) {
+    .comment1 {
+        margin-right: 0;
+        font-size: 0.9rem; 
+    }
+
+    .comment2 {
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .comment1 {
+        margin-right: 0;
+        font-size: 0.9rem; 
+    }
+
     .comment2 {
         display: none;
     }
@@ -177,17 +216,12 @@ body {
         display: none;
     }
     
-    .comment2 em {
+    .comment2 cite {
         display: none;
     }
     
     .comment2 img {
         display: none;
-    }
-
-    .comment1 {
-        margin-right: 0;
-        font-size: 0.8em; 
     }
 }
 
@@ -202,13 +236,16 @@ body {
     width: 400px;
 }
 
-.comment2 em {
+.comment2 cite {
+    font-style: italic;
     font-size: 0.8em;
+    padding-left: 6rem;
 }
 
 .comment2 img {
     float: left;
     margin-right: 10px;
+    height: 70%;
 }
 
 .cardbox {
