@@ -49,9 +49,16 @@ body {
         border-bottom: solid white;
         font-weight: bold;
         text-align: center;
-        box-sizing: content-box;
-        height: 12px;
+        padding-top: 10px;
+        box-sizing: border-box;
+        height: 23px;
         margin-left: auto;
+    }
+
+    .menu p {
+        display: inline;
+        border-top: solid white;
+        color: transparent;
     }
 }
 
