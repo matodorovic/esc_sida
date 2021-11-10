@@ -36,29 +36,73 @@ body {
 @media screen and (max-width: 800px) {
     .header {
         height: fit-content;
+        position: relative;
     }
     
     .header h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .menu {
         display: block;
         font-size: 1.6rem;
-        color: White;
+        color:white;
         border-top: solid white;
         border-bottom: solid white;
         font-weight: bold;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
         box-sizing: border-box;
-        height: 23px;
+        height: 18px;
         margin-left: auto;
     }
 
-    .menu p {
-        display: inline;
-        border-top: solid white;
-        color: transparent;
+    .menuDiv {
+        box-sizing: border-box;
+        width: 95%;
+        margin-right: 10px;
+        height: 35.5rem;
+        background-color:#011827;
+        margin-left: auto;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        box-shadow: 1rem 1rem 1rem 1rem white;
+        animation-name: showMenu;
+        animation-duration: 0.1s;
+    }
+
+    @keyframes showMenu {
+        0% {
+            opacity: 0;
+        } 
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .xButtonStyle {
+        font-size: 2rem;
+        float:right;
+        margin: 1rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .menuListStyle {
+        clear: both;
+        list-style-type: none;
+        font-size: 1.5rem;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .menuListStyle li {
+        margin: 1.2rem;
+        font-weight: bold;
     }
 }
 
@@ -152,7 +196,7 @@ body {
         background-color: white;
         color: blue;
         text-decoration: underline;
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -323,7 +367,7 @@ body {
 
    .card {
         flex: none;
-        width: 100%;
+        width: 80%;
     } 
 
     .card-inside-link {
@@ -378,6 +422,15 @@ body {
     font-weight: bold;
     font-size: 24px;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 660px) {
+    .cardboxlink2 {
+        background-color: white;
+        color: blue;
+        text-decoration: underline;
+        font-size: 0.9rem;
+    }
 }
 
 .story {
