@@ -220,7 +220,7 @@ body {
 
 .comment1 p {
     font-style: italic;
-    width: 400px;
+    width: fit-content;
 }
 
 .comment1 cite {
@@ -233,6 +233,7 @@ body {
     float: left;
     margin-right: 10px;
     height: 70%;
+    width: 5rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -248,9 +249,20 @@ body {
 }
 
 @media screen and (max-width: 660px) {
+    .comments {
+        margin-left: 0.9rem;
+    }
+
     .comment1 {
-        margin-right: 0;
+        margin-right: 0.6rem;
+        margin-left: 0.9rem;
         font-size: 0.9rem; 
+        box-sizing: border-box;
+        width: 95vw;
+    }
+
+    .comment1 p {
+        width: 95vw;
     }
 
     .comment2 {
@@ -291,7 +303,7 @@ body {
     float: left;
     margin-right: 10px;
     height: 70%;
-}
+    width: 5rem;}
 
 .cardbox {
     margin: 10px;
