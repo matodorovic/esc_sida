@@ -68,7 +68,7 @@ body {
         position: absolute;
         box-shadow: 1rem 1rem 1rem 1rem white;
         animation-name: showMenu;
-        animation-duration: 0.5s;
+        animation-duration: 0.2s;
     }
 
     @keyframes showMenu {
