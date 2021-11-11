@@ -68,7 +68,7 @@ body {
         position: absolute;
         box-shadow: 1rem 1rem 1rem 1rem white;
         animation-name: showMenu;
-        animation-duration: 0.1s;
+        animation-duration: 0.4s;
     }
 
     @keyframes showMenu {
@@ -98,6 +98,7 @@ body {
         flex-direction: column;
         text-align: center;
         margin-top: 10rem;
+        margin-right: 2rem;
     }
 
     .menuListStyle li {
