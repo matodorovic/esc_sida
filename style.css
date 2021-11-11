@@ -59,16 +59,16 @@ body {
 
     .menuDiv {
         box-sizing: border-box;
-        width: 95%;
+        width: 95vw;
         margin-right: 10px;
-        height: 35.5rem;
+        height: 95vh;
         background-color:#011827;
         margin-left: auto;
         font-family: 'Roboto', sans-serif;
         position: absolute;
         box-shadow: 1rem 1rem 1rem 1rem white;
         animation-name: showMenu;
-        animation-duration: 0.4s;
+        animation-duration: 0.5s;
     }
 
     @keyframes showMenu {
